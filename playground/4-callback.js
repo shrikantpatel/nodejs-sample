@@ -26,3 +26,11 @@ const add = (a, b, callback) => {
 }
 
 add(1, 4, sum => console.log(sum))
+
+const multiple = (a, b, callback) => {
+    setTimeout(() => {
+        callback(a*b)
+    },2000)
+}
+
+multiple(6, 5, multiple => console.log(multiple))

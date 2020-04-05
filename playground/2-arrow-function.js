@@ -15,11 +15,13 @@ const event = {
     guestList: ['shri', 'bhumi', 'parth', 'krish'],
     // shorthand method to define function
     printList() {
+        console.log("************ printList()")
         console.log('Guest list for ' + this.name)
         this.guestList.forEach(x => console.log(x + ' is attending ' + this.name))
     },
     // long hand method to define function
     printList1: function () {
+        console.log("************ printList1()")
         console.log('guest list for ' + this.name)
     },
     //guest list for undefined for below method, so should not use => to define the function that need "this"

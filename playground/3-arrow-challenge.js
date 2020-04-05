@@ -18,7 +18,11 @@ const tasks = {
     }],
     getTasksToDo(){
         return this.tasks.filter(task => !task.completed)
+    },
+    getMethod1 : function() {
+        console.log("test")
     }
 }
 
 console.log(tasks.getTasksToDo())
+tasks.getMethod1()

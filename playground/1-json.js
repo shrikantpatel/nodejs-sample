@@ -10,5 +10,6 @@ const fs = require('fs');
 
 const dataBuffer = fs.readFileSync('1-json.json')
 const dataJSON = dataBuffer.toString()
+console.log("Json String - " + dataJSON)
 const data = JSON.parse(dataJSON)
-console.log(data.author)
+console.log("Javascript object - " + data.author)
