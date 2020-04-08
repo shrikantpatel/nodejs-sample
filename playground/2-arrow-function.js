@@ -25,7 +25,10 @@ const event = {
         console.log('guest list for ' + this.name)
     },
     //guest list for undefined for below method, so should not use => to define the function that need "this"
-    printList2: x => console.log('guest list for ' + this.name)
+    printList2: x => {
+        console.log("************ printList2()")
+        console.log('guest list for ' + this.name)
+    }
 }
 
 event.printList();
