@@ -2,9 +2,16 @@ const path = require('path')
 const express = require('express')
 
 const app = express()
-const publicDirectory = path.join(__dirname, '../public')
 
+//define path for public directory and view path
+const publicDirectory = path.join(__dirname, '../public')
+const viewsPath = path.join(__dirname,'../templates')
+
+//setup handle bar engine and corresponding view directory
 app.set('view engine', 'hbs')
+app.set('views', viewsPath)
+
+//setup the static directory to serve
 app.use(express.static(publicDirectory))
 
 app.get('', (req, res) => {
