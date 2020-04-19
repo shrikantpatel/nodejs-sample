@@ -1,0 +1,21 @@
+{
+    "headers": {
+        "tenantId": "hyundai",
+        "eventTime": "2020-04-16T01:39:04.520",
+        "correlationId": "0C9C3AB0-7F83-11EA-B230-0A58A9FEAC2A",
+        "vin": "A0001442572747379",
+        "id": "7df484cf-272f-4730-93ae-8a4132759f86",
+        "eventType": "VehicleServicesProvisionRequested",
+        "vehicleId": "FFC6DC00-7F82-11EA-869C-06BEFD7D50A2",
+        "userId": "60046813-1c56-4aa6-8d51-9bbba5c4f0d0"
+    },
+    "payload": {
+        "data": {
+            "vin": "A0001442572747379",
+            "action": "ACTIVATE",
+            "vehicleServiceIds": [
+                "F1120EF0-7F82-11EA-918F-06BEFD7D50A2"
+            ]
+        }
+    }
+}
